@@ -2,7 +2,7 @@ Simple Api Handlers for cielo(a discord bot.)
 
 Youtube:
 
-Video Search:
+Video Search Examples:
 
 Search via video id:
 
@@ -11,8 +11,8 @@ Search via video id:
 
   let youtube = new YouTube(/* api key here */);
   
-  youtube.searchVideoID(/* video id here */).then(response => {
-    console.log(response);
+  youtube.searchVideoID('UFfxYgpHRg').then(response => {
+    console.log(response.snippet.publishedAt); 2021-03-28T19:00:45Z
   });
   ```
   
@@ -23,8 +23,8 @@ Search via video link:
 
   let youtube = new YouTube(/* api key here */);
   
-  youtube.searchVideoLink(/* video link here */).then(response => {
-    console.log(response);
+  youtube.searchVideoLink('https://www.youtube.com/watch?v=TUFfxYgpHRg').then(response => {
+    console.log(response.snippet.title); Why I Left Twitter
   });
   ```
  
