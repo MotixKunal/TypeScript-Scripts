@@ -23,7 +23,7 @@ Search via video link:
 
   let youtube = new YouTube(/* api key here */);
   
-  youtube.searchVideoLink(/* video id here */).then(response => {
+  youtube.searchVideoLink(/* video link here */).then(response => {
     console.log(response);
   });
   ```
