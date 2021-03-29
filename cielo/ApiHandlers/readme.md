@@ -1,6 +1,6 @@
 Simple Api Handlers for cielo(a discord bot.)
 
-#Youtube:
+# Youtube:
 
 Search for a video via video id:
 
