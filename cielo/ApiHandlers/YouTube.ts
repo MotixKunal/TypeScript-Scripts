@@ -14,7 +14,7 @@ export default class YouTube {
      * @returns Promise<youtube_v3.Schema$Video>
      */
 
-    public async searchID(videoId: string) {
+    public async searchVideoID(videoId: string) {
         return await google.youtube("v3").videos.list({
             key: this.__ApiKey,
             part: ['snippet', 'id', 'topicDetails', 'statistics', 'status', 'contentDetails'],
@@ -28,7 +28,7 @@ export default class YouTube {
      * @returns Promise<youtube_v3.Schema$Video>
     */
 
-    public async searchLink(videoLink: string) {
+    public async searchVideoLink(videoLink: string) {
         let { id } = require('get-video-id')(videoLink);
 
         return await google.youtube("v3").videos.list({
