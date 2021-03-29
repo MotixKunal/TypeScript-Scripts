@@ -15,7 +15,7 @@ export default class YouTube {
      * @returns Promise<youtube_v3.Schema$Video>
     */
 
-    public searchVideoLink(videoLinkorId: string) {
+    public searchVideo(videoLinkorId: string) {
         let id = getVideoId(videoLinkorId).id || videoLinkorId;
 
         return google.youtube("v3").videos.list({
