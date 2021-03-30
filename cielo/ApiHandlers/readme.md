@@ -2,7 +2,7 @@ Simple Api Handlers for cielo(a discord bot.)
 
 # Youtube:
 
-Search for a video with video id/link:
+# Search for a video with video id/link:
 
   ```ts
   import YouTube from '@ApiHandlers/YouTube';
