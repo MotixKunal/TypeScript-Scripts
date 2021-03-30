@@ -35,7 +35,7 @@ export default class YouTube {
     public async searchChannel(idorlink: string) {
         let id = await getChannelId(idorlink).then((response: any) => response.id) || idorlink;
 
-        return google.youtube("v3").channels.list({
+        return await google.youtube("v3").channels.list({
             key: this.__ApiKey,
             id: id,
             part: ['contentDetails', 'contentOwnerDetails', 'id', 'snippet', 'statistics', 'status', 'topicDetails']
