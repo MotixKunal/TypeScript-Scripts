@@ -1,4 +1,4 @@
-Simple Api Handlers for cielo(a discord bot.)
+## Simple Api Handlers for cielo.
 
 # Youtube:
 
@@ -24,6 +24,8 @@ Simple Api Handlers for cielo(a discord bot.)
   ```
  
 For more information about response check: https://developers.google.com/youtube/v3/docs/videos#resource
+
+# Search for a channel with channel id/link
  
 (More methods coming soon.)
   
